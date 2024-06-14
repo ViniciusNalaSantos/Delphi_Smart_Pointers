@@ -1,0 +1,72 @@
+﻿unit SmartPointer;
+
+interface
+
+type
+  TSmartPointer<T : class, constructor> = record
+    strict private
+      FObjectValue : T;
+      FFreeTheObjectValue : TInterfacedObject;
+      function GetObjectValue : T;
+    public
+      class operator Implicit(smart : TSmartPointer<T>) : T;
+      class operator Implicit(aValue : T) : TSmartPointer<T>;
+      constructor Create(aValue : T);
+      property ObjectValue : T read GetObjectValue;
+
+  end;
+
+  // Interface Object responsible to free the object from the memory
+  TFreeTheObjectValue = class(TInterfacedObject)
+  private
+   FObjectToFree : TObject;
+  public
+    constructor Create(anObjectToFree: TObject);
+    destructor Destroy; override;
+
+  end;
+
+implementation
+
+{ TSmartPointer<T> }
+
+constructor TSmartPointer<T>.Create(aValue: T);
+begin
+  FObjectValue := aValue;
+  FFreeTheObjectValue := TFreeTheObjectValue.Create(FObjectValue); // Pointing the reference to the interface object that will administrate the object
+
+end;
+
+function TSmartPointer<T>.GetObjectValue: T;
+begin
+  result := FObjectValue
+
+end;
+
+class operator TSmartPointer<T>.Implicit(aValue: T): TSmartPointer<T>;
+begin
+  result := TSmartPointer<T>.Create(aValue);
+
+end;
+
+class operator TSmartPointer<T>.Implicit(smart: TSmartPointer<T>): T;
+begin
+  result := smart.ObjectValue;
+
+end;
+
+{ TFreeTheObjectValue }
+
+constructor TFreeTheObjectValue.Create(anObjectToFree: TObject);
+begin
+
+end;
+
+destructor TFreeTheObjectValue.Destroy;
+begin
+  FObjectToFree.Free;
+  inherited;
+
+end;
+
+end.

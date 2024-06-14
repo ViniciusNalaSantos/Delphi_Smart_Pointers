@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/22 10:55:01.000.761,=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/22 10:55:43.000.920,=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/04/22 10:56:07.000.170,C:\Users\Korp\Documents\Embarcadero\Studio\Projects\View.Principal.pas=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/04/22 10:56:07.000.170,C:\Users\Korp\Documents\Embarcadero\Studio\Projects\View.Principal.dfm=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2024/04/22 10:56:47.000.781,C:\Users\Korp\Documents\Embarcadero\Studio\Projects\View.Principal.dfm=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/04/22 10:56:47.000.781,C:\Users\Korp\Documents\Embarcadero\Studio\Projects\View.Principal.pas=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/22 10:56:58.000.173,C:\Users\Korp\Desktop\Project SmartPointers\Sources\View.Principal.dfm=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\View.Principal.dfm</Transaction>
+    <Transaction>2024/04/22 10:56:58.000.173,C:\Users\Korp\Desktop\Project SmartPointers\Sources\View.Principal.pas=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\View.Principal.pas</Transaction>
+    <Transaction>2024/04/22 10:57:16.000.363,=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/22 10:57:38.000.783,C:\Users\Korp\Desktop\Project SmartPointers\Sources\SmartPointer.pas=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/22 11:55:39.000.391,C:\Users\Korp\Desktop\Project SmartPointers\Package\Sidney\Project1.dproj=C:\Users\Korp\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
